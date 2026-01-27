@@ -408,12 +408,13 @@ public class Program {
         var aNames = person
                     .Where(n => n.Name.StartsWith("a"));
         Console.WriteLine("the names start with a is:");
-        foreach (var h in aNames) {
-            Console.WriteLine($"{ h.Name} and their age is {h.Age}");
+        foreach (var h in aNames)
+        {
+            Console.WriteLine($"{h.Name} and their age is {h.Age}");
         }
-                  
-    
-    
+
+
+
     }
 
 }
