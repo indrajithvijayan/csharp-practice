@@ -386,35 +386,136 @@
 
 
 
-public class Person {
+//public class Person {
 
-    public string Name;
-    public int Age;
+//    public string Name;
+//    public int Age;
 
-}
-public class Program {
+//}
+//public class Program {
 
-     static void Main() {
+//     static void Main() {
 
-        var person = new List<Person> { 
-        
-        new Person{Name="indran", Age=22},
-        new Person{Name="ajay", Age=22},
-        new Person{Name="amal", Age=22},
-        new Person{Name="indran", Age=22},
-        new Person{Name="anas", Age=22},
-        };
+//        var person = new List<Person> { 
 
-        var aNames = person
-                    .Where(n => n.Name.StartsWith("a"));
-        Console.WriteLine("the names start with a is:");
-        foreach (var h in aNames)
-        {
-            Console.WriteLine($"{h.Name} and their age is {h.Age}");
-        }
+//        new Person{Name="indran", Age=22},
+//        new Person{Name="ajay", Age=22},
+//        new Person{Name="amal", Age=22},
+//        new Person{Name="indran", Age=22},
+//        new Person{Name="anas", Age=22},
+//        };
+
+//        var aNames = person
+//                    .Where(n => n.Name.StartsWith("a"));
+//        Console.WriteLine("the names start with a is:");
+//        foreach (var h in aNames)
+//        {
+//            Console.WriteLine($"{h.Name} and their age is {h.Age}");
+//        }
 
 
 
-    }
+//    }
 
-}
+//}
+//int[] nums = { 1,2,3};
+//foreach (int n in nums)
+//{
+//    Console.WriteLine(n);
+//}
+
+//int[] nums1= { 1,2,3,4,5};
+//int sum = 0;
+//foreach (int p in nums1)
+//{
+//    sum =sum+ p;
+//    Console.WriteLine(sum);    
+//}
+
+
+//      while
+
+//int i = 0;
+//while (i < 3)
+//{
+//    Console.WriteLine(i);
+//    i++;
+//}
+//        do-while
+//int i = 0;
+//do
+//{
+//    Console.WriteLine(i);
+//    i++;
+
+//} while (i<3);
+
+
+//     functions and types of functions
+// no para ,no return
+//void greet() {
+
+//    Console.WriteLine("hello");
+//}
+
+//// parameter no return
+//void add(int a,int b)
+//{
+
+//    Console.WriteLine(a+b);
+//}
+
+//// parameter with return
+
+//int add1(int a,int b)
+//{
+//    return a + b;
+//}
+
+// passs by value and pass by refrence
+
+//void change(int x)
+//{
+//    x = 50;
+//}
+//int a = 10;
+//change(a);
+//Console.WriteLine(a);
+//void  change1(ref int x)
+//{
+//    x = 50;
+//}
+//int b = 10;
+//change1(ref b);
+//Console.WriteLine(b);
+
+
+//   type convertion
+
+
+
+int a = 10;
+double b = a;
+
+double x = 10.8;
+int y = (int)x;
+Console.WriteLine(y);
+
+// covert class
+string s = "100";
+int num = Convert.ToInt32(s);
+
+// try parse 
+string s1 = "abc";
+int nums;
+bool success = int.TryParse(s1, out num);
+
+// parse
+string s2 = "50";
+int n = int.Parse(s2);
+
+// collections
+
+int[] arr = { 1,2,3};
+
+List<string> names = new List<string>();
