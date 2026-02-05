@@ -494,28 +494,37 @@
 
 
 
-int a = 10;
-double b = a;
+//int a = 10;
+//double b = a;
 
-double x = 10.8;
-int y = (int)x;
-Console.WriteLine(y);
+//double x = 10.8;
+//int y = (int)x;
+//Console.WriteLine(y);
 
-// covert class
-string s = "100";
-int num = Convert.ToInt32(s);
+//// covert class
+//string s = "100";
+//int num = Convert.ToInt32(s);
 
-// try parse 
-string s1 = "abc";
-int nums;
-bool success = int.TryParse(s1, out num);
+//// try parse 
+//string s1 = "abc";
+//int nums;
+//bool success = int.TryParse(s1, out num);
 
-// parse
-string s2 = "50";
-int n = int.Parse(s2);
+//// parse
+//string s2 = "50";
+//int n = int.Parse(s2);
 
-// collections
+//// collections
 
-int[] arr = { 1,2,3};
+//int[] arr = { 1,2,3};
 
-List<string> names = new List<string>();
+//List<string> names = new List<string>();
+
+
+Dictionary<int, string> students = new Dictionary<int, string>();
+students.Add(0, "Arun");
+Console.WriteLine(students[0]);
+
+
+
+
