@@ -41,35 +41,35 @@
 //}
 //return students whose marks are greater than the average marks of their own department
 
-class Student { 
- public int Id { get; set; }
- public string Name { get; set; }
- public int Age{ get; set; }
- public string Dept { get; set; }
-  public int Marks { get; set; }
+//class Student { 
+// public int Id { get; set; }
+// public string Name { get; set; }
+// public int Age{ get; set; }
+// public string Dept { get; set; }
+//  public int Marks { get; set; }
 
-}
-class program
-{
-    static void Main()
-    {
-        List<Student> student = new List<Student>()
-        {
-            new Student{ Id=1, Name="siyad",Age=24,Dept="cs",Marks =88},
-            new Student{ Id=2, Name="indran",Age=24,Dept="it",Marks =98},
-            new Student{ Id=3, Name="siyad",Age=24,Dept="it",Marks =68},
-            new Student{ Id=4, Name="siyad",Age=24,Dept="ec",Marks =70},
-            new Student{ Id=5, Name="siyad",Age=24,Dept="cs",Marks =85},
-        };
+//}
+//class program
+//{
+//    static void Main()
+//    {
+//        List<Student> student = new List<Student>()
+//        {
+//            new Student{ Id=1, Name="siyad",Age=24,Dept="cs",Marks =88},
+//            new Student{ Id=2, Name="indran",Age=24,Dept="it",Marks =98},
+//            new Student{ Id=3, Name="siyad",Age=24,Dept="it",Marks =68},
+//            new Student{ Id=4, Name="siyad",Age=24,Dept="ec",Marks =70},
+//            new Student{ Id=5, Name="siyad",Age=24,Dept="cs",Marks =85},
+//        };
 
-        var result = student
-            .GroupBy(s => s.Dept)
-            .SelectMany(g =>
-              g.Where(s => s.Marks >= g.Average(x => x.Marks))
-            );
-        foreach (var s in result)
-        {
-            Console.WriteLine($"{s.Name} from {s.Dept} scored {s.Marks}");
-        }
-    }
-}
+//        var result = student
+//            .GroupBy(s => s.Dept)
+//            .SelectMany(g =>
+//              g.Where(s => s.Marks >= g.Average(x => x.Marks))
+//            );
+//        foreach (var s in result)
+//        {
+//            Console.WriteLine($"{s.Name} from {s.Dept} scored {s.Marks}");
+//        }
+//    }
+//}

@@ -521,10 +521,24 @@
 //List<string> names = new List<string>();
 
 
-Dictionary<int, string> students = new Dictionary<int, string>();
-students.Add(0, "Arun");
-Console.WriteLine(students[0]);
+//Dictionary<int, string> students = new Dictionary<int, string>();
+//students.Add(0, "Arun");
+//Console.WriteLine(students[0]);
+
+//int a = 10;
+//int b = a;   // value type unchanged the original value will not be changed
+//b = 20;
+//Console.WriteLine(a);
 
 
+//string s = "abc";
+//string s1 = s;
+//s1 = "hello";
+//Console.WriteLine(s);
+
+
+
+//double x = 9.5;
+//int y = (int)x;
 
 
